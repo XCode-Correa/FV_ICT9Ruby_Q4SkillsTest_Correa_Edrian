@@ -8,11 +8,12 @@
 
     <style>
         body{
+            background-image: url("https://images.ctfassets.net/nnkxuzam4k38/4BIP4ge9ontCTkNubiY4lb/48121f9d09134fd83670b1d6e182aa66/white-particles-background.png");
             background-size: cover;
             background-repeat: repeat;
             background-position: center;
             background-attachment: fixed;
-            background-color: rgb(34, 34, 34);
+            background-color: rgb(255, 255, 255);
             display: flex;
             justify-content: center; 
             align-items: center;     
@@ -41,17 +42,13 @@
 </head>
 <body>
 
-<div style="background-color: rgba(255, 255, 255, 0.5); width: 400px; border-radius: 30px;" class="container text-dark p-3">
-    <br>
-
+<div style="background-color: rgb(255, 255, 255); width: 400px; border-radius: 30px;" class="container text-dark p-3 shadow">
     <center>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGDizIH8HMP5y6qTldEpO8VZEd6X0UiSrYFw&s" alt="Logo" style="width: 100px; height: auto;">
+        <img src="https://t4.ftcdn.net/jpg/02/82/57/53/360_F_282575364_W1Mz7QqrvkdLN18XcIO3vomBBc0B8FYV.jpg" alt="Logo" style="width: auto; height: 150px;">
     </center>
-
-    <br>
     
     <div class="text-center">
-        <h1 class="fw-bold">Login</h1>
+        <h2 class="fw-bold">Login</h2>
     </div>
 
     <div class="text-center">
@@ -73,7 +70,7 @@
         <label class="form-check-label fs-8 fw-bold" for="stay">Stay logged in.</label>
     </div>
     
-    <p id="msg" class="fs-7 text-light" style="height: 10px; padding-left: 25px;"></p>
+    <p id="msg" class="fs-7 text-dark" style="height: 10px; padding-left: 25px;"></p>
 
     <p id="display" style="height: 10px;" class="text-danger fs-attempt text-center"></p>
 
@@ -85,7 +82,7 @@
 
     <div class="text-center">
         <hr class="w-100 mx-auto text-dark"> 
-        <a href="#" class="text-light fs-8 text-decoration-underline">Forgot username / password?</a>
+        <a href="#" class="text-dark fs-8 text-decoration-underline">Forgot username / password?</a>
     </div>
 </div>
 
@@ -107,7 +104,7 @@
             alert(granted);
             attempt_counter = 0; 
             document.getElementById("display").innerHTML = "";
-            window.location.href = "dashboard.html";
+            window.location.href = "notebooks.html";
 
             break;
         }
