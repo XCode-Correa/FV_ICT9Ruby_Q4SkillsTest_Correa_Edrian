@@ -34,9 +34,11 @@
 <body>
 <nav class="navbar navbar-dark navbar-expand-lg shadow">
     <div class="container-fluid d-flex flex-column align-items-start">
-        <a class="navbar-brand mb-4" href="notebooks.html">
-            <img src="https://t4.ftcdn.net/jpg/02/82/57/53/360_F_282575364_W1Mz7QqrvkdLN18XcIO3vomBBc0B8FYV.jpg" alt="Logo" style="max-height: 130px;">
-        </a>
+        <div class="w-100 d-flex justify-content-center">
+            <a class="navbar-brand" href="notebooks.html">
+            <img src="https://i.pinimg.com/736x/b9/53/6b/b9536b7ab3447547656e0e05b8eba0ae.jpg" alt="Logo" style="max-height: 150px;">
+            </a>
+        </div>
 
         <div class="collapse navbar-collapse" id="mynavbar">
             <ul class="navbar-nav mb-4">
@@ -44,11 +46,20 @@
                 <li class="nav-item"><a class="nav-link text-dark" href="notebooks.html">Virtual Notebooks</a></li>
                 <li class="nav-item"><a class="nav-link text-dark" href="tasks.html">Tasks</a></li>
                 <li class="nav-item"><a class="nav-link text-dark" href="profile.html">Profile</a></li>
-                <li class="nav-item"><a class="nav-link text-dark" href="index.html">Logout</a></li>
+                <li class="nav-item" onclick="handleLogout()"><p class="nav-link text-dark">Logout</p></li>
             </ul>
         </div>
     </div>
 </nav>
     
+<script>
+function handleLogout() {
+    if (confirm("Are you sure?")) {
+        window.location.href = "index.html";
+    } else {
+        window.location.reload();
+    }
+}
+</script>
 </body>
 </html>
