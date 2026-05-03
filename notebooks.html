@@ -3,21 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Q4 Project | Group 6</title>
+    <title>Q4 Skills Test</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <style>
     body {
+        background-image: url("https://images.ctfassets.net/nnkxuzam4k38/4BIP4ge9ontCTkNubiY4lb/48121f9d09134fd83670b1d6e182aa66/white-particles-background.png");
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        background-attachment: fixed;
+        background-color: rgb(255, 255, 255);
         margin-left: 250px;
     }
     .navbar {
         position: fixed;
         top: 0;
         left: 0;
-        width: 250px;
+        width: 225px;
         height: 100vh;
         align-items: flex-start;
         padding: 2rem 1rem;
+        background-color: white ;
     }
     .navbar-collapse {
         flex-direction: column;
@@ -31,8 +38,14 @@
 </style>
 
 </head>
+
+<div class="position-fixed bottom-0 end-0 m-3 px-3 py-2 rounded shadow"
+     style="background-color: rgba(128,128,128,0.7); color: white; font-size: 14px;">
+    Q4 Skills Test | Edrian Correa
+</div>
+
 <body>
-<nav class="navbar navbar-dark navbar-expand-lg shadow">
+<nav class="navbar navbar-expand-lg shadow">
     <div class="container-fluid d-flex flex-column align-items-start">
         <div class="w-100 d-flex justify-content-center">
             <a class="navbar-brand" href="notebooks.html">
@@ -52,26 +65,132 @@
     </div>
 </nav>
 
+<br>
+
 <div class="container">
-    <div class="row">
-        <!--1st notebook-->
-        <div class="col">
-            <h2>Filipino</h2>
-            <!--other notebook details here-->
-        </div>
-        <!--2nd notebook-->
-         <div class="col">
-            <h2>Filipino</h2>
-            <!--other notebook details here-->
-        </div>
-        <!--3rd notebook-->
-         <div class="col">
-            <h2>Filipino</h2>
-            <!--other notebook details here-->
+<div class="row">
+    <div class="col-3">
+        <div class="shadow bg-light p-3" style="border-radius: 10px;">
+            <h2><b>NOTEBOOKS</b></h2>
+            <p style="font-size: 15px;">Select a subject</p>
         </div>
     </div>
+
+    <div class="col-8">
+
+        <div class="row g-3">
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('Math','Mr. Verba')">
+                    <h4><b>Math</b></h4>
+                    <img src="https://t3.ftcdn.net/jpg/05/52/35/58/360_F_552355848_5uctS7naH0p4vWxEbcQS9mei7OdmKe8A.jpg" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Mr. Verba</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('Filipino','Ms. Francisco')">
+                    <h4><b>Filipino</b></h4>
+                    <img src="https://i.pinimg.com/736x/54/94/73/549473776e546d2b09ff8d399b1469f2.jpg" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Ms. Francisco</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('English','Ms. Avila')">
+                    <h4><b>English</b></h4>
+                    <img src="https://img.freepik.com/premium-photo/blank-notepad-red-table-plant-pen_71756-1810.jpg" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Ms. Avila</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 mt-1">
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('Science','Ms. Mendaro')">
+                    <h4><b>Science</b></h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGEMmFahNUOIFG9FeuL5H7A5O5G68x5Lq1ZQ&s" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Ms. Mendaro</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('Social Studies','Mr. Reynoso')">
+                    <h4><b>Social Studies</b></h4>
+                    <img src="https://itsartlaw.org/wp-content/uploads/2025/10/word-image-75296-1.webp" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Mr. Reynoso</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('ICT','Mr. Santos')">
+                    <h4><b>ICT</b></h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPuFCx5O5rgbvdUjIX-J1zEuJrJE-wb-DL1w&s" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Mr. Santos</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-3 mt-1">
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('PEH','Mr. Cases')">
+                    <h4><b>PEH</b></h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvlxIXQRY8me-gWvGY3HBMfpRMGR99Duwqgw&s" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Mr. Cases</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('TLE','Ms. Del Barrio')">
+                    <h4><b>TLE</b></h4>
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtfsxaRBnN91Z_wR62acCh90sc9_Sm9VqLyA&s" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Ms. Del Barrio</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+
+            <div class="col-4">
+                <div class="shadow bg-light p-4" style="border-radius: 10px; cursor: pointer;" onclick="showInfo('MUSIC','Mr. Martin')">
+                    <h4><b>MUSIC</b></h4>
+                    <img src="https://images.stockcake.com/public/0/7/f/07f689e8-4811-428c-b830-10beef56cc44/music-meets-art-stockcake.jpg" style="width: 100%; height: 75px; border-radius: 10px;" class="mb-1">
+                    <h6 class="text-secondary"><b>9-Ruby 2025-2026</b></h6>
+                    <br>
+                    <h6 class="text-secondary">Mr. Martin</h6>
+                    <div class="bg-secondary rounded-pill" style="height: 8px;"></div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="col-1"></div>
 </div>
-    
+</div>
+
+<br>
+
 <script>
 function handleLogout() {
     if (confirm("Are you sure?")) {
@@ -80,6 +199,11 @@ function handleLogout() {
         window.location.reload();
     }
 }
+
+function showInfo(subject, teacher) {
+    alert(subject + " | " + teacher + "\nStatus: joined");
+}
 </script>
+
 </body>
 </html>
